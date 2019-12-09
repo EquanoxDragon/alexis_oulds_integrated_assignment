@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us form</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar"></section><!--end topBar-->
+	<div id="siteContainer">
+    <header>
+        <h1 class="hidden"> Welcome to the Contact form page of Equanox Dragon Stories and Art</h1>
+        <img src="images/logo_temp.png" height="300" alt="Blue Dragon in front of moon logo"> <h2>Equanox Dragon</h2>
+        <nav>
+            <h2 class="hidden">Main Navigation</h2>
+                <div class="topnav">
+                    <!--change out the class="active" to what page the person is on!-->
+                    <a href="index.html">Home</a>
+                    <a href="stories.html">Stories</a>
+                    <a href="art.html">Art</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="store.html">Store</a>
+                    <a class="active" href="about.html">About</a>
+                </div>
+        </nav>
+    </header>        <section id="contentCon">
+        	<div id="content1"><p> 
+
+    <form autocomplete="off" action="sending_off_info.php" method="post">
+        <label>Who would you like to contact?</label>
+            <input type="text" list="dataList" placeholder="Name of Contact" required>
+            <datalist id="dataList">
+                <option>Equanox (Author/Artist)</option>
+                <option>Support Personel</option>
+                <option>Editors</option>
+                <!--I don't know what else to put here-->
+            </datalist>
+            <br><br>
+        <label>We will need a valid email adress to get in contact:</label>
+            <input type="email" placeholder="name@emailname.email" required>
+            <br><br>
+        <label>How do you want us to reffer to you? Tell us what name we should call you:</label>
+            <input type="text" placeholder="Acount name or any name" required>
+            <br><br>
+        <label>Reason for Contact (Please keep it short):</label>
+            <input type="text" placeholder="Short Subject/Reason" required>
+            <br><br>
+        <label>Message:</label><br>
+            <textarea rows="10" cols="50" placeholder="Anything else you want to say?"></textarea>
+            <br><br>
+                <!--the submit simulation would be removed for real part but I couldn't figure out how to make it so that when you click submit it would send off and then give you the thank you page so I made this-->
+                <a href="thanks.html">Submit (Simulation)</a>
+                <br><br>
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+
+                
+
+        
+    </form></p></div>
+
+        	<div id="content2"><p><h2>Contact Form</h2>
+        Thank you for taking the time to contact us, we hope we can help you find what you need, fix any problems you're running into, or answer any questions you may have.</p></div><!--end content2-->
+
+
+        </section><!--end contentCon-->
+        <footer id="mainFooter">
+        <div id="footerNav"><p><h2 class="hidden">Footer Navigation</h2>
+                <ul style="list-style-type:none">
+                    <li><a href="form.html">Contact Us</a></li>
+                    <li><a href="error.html">Support</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="error.html">FAQ</a></li>
+                    <li><a href="error.html">Legal</a></li>
+                    <li><a href="error.html">Terms</a></li>
+                    <li><a href="error.html">Privacy</a></li></p></div><!--end FooterNav-->
+            <div id="copyRight"><p><a href="error.html">Copyright</a></p></div><!--end Copyright-->
+        </footer><!--end mainFooter-->
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>
